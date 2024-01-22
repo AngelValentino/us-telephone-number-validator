@@ -1,0 +1,149 @@
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+
+/* NUMBER VALIDATOR */
+
+.validator-input h1 {
+  margin: 0 0 30px;
+}
+
+.validator-input > p {
+  margin: 0 0 50px;
+}
+
+.buttons-and-input-container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.validator-input input {
+  font-size: 1.25rem;
+  padding: 12px;
+  border: 1px solid rgba(128, 128, 128, 0.404);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.validator-buttons {
+  margin: 30px 0 0; 
+}
+
+.validator-buttons button {
+  width: 100%;
+  font-size: 1.25rem;
+  padding: 12px 0;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.404);
+  transition: background-color 0.15s;
+}
+
+.validator-buttons button:first-of-type {
+  background-color: #ff9100;
+}
+
+.validator-buttons button:last-of-type {
+  margin: 10px 0 0;
+  background-color: #00b0ff;
+}
+
+.result p {
+  padding: 30px 0 0;
+}
+
+.result span {
+  font-weight: bold;
+}
+
+.invalid-input {
+  color: #E65100;
+}
+
+.valid-input {
+  color: #35C912;
+}
+
+
+/* MORE INFO SECTION */
+
+img {
+  width: 100%;
+}
+
+.validator-container {
+  padding: 30px;
+}
+
+.validator-input {
+  text-align: center;
+}
+
+.more-info {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: center;
+  background-color: #f2fbff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 75px 0 0;
+}
+
+
+/* MEDIA QUERY FOR MOBILE */
+
+@media screen and (max-width: 450px) {
+  .more-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* MEDIA QUERY FOR HOVER CAPABLE DEVICES */
+
+@media screen and(hover: hover) {
+
+  .validator-buttons button:first-of-type:hover {
+    background-color: #f57c00;
+  }
+
+  .validator-buttons button:last-of-type:hover {
+    background-color: #009be0;
+  }
+  
+}
+
+
+/* ACTIVE BUTTONS */
+
+.validator-buttons button:first-of-type:active {
+  background-color: #e86500;
+}
+
+.validator-buttons button:last-of-type:active {
+  background-color: #0288d1;
+}
