@@ -125,7 +125,7 @@ img {
 
 /* MEDIA QUERY FOR HOVER CAPABLE DEVICES */
 
-@media screen and(hover: hover) {
+@media screen and (hover: hover) {
 
   .validator-buttons button:first-of-type:hover {
     background-color: #f57c00;
