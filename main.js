@@ -10,10 +10,7 @@ function testRegex(regex, str) {
 
 function validateNumber() {
   const input = inputLm.value;
-  const regex = /^(?:\+?1\s?)?(?:\(\d{3}\)|\d{3})[-\s.]?\d{3}[-\s.]?\d{4}$/
-
-  console.log(input);
-  console.log(resultLm);
+  const regex = /^(?:\+?1\s?)?(?:\(\d{3}\)|\d{3})[-\s.]?\d{3}[-\s.]?\d{4}$/;
 
   if (!input) {
     alert('Please provide a phone number');
