@@ -3,7 +3,6 @@ const clearBtnLm = document.getElementById('clear-btn');
 const resultLm = document.getElementById('results-div');
 const inputLm = document.getElementById('user-input');
 
-
 function testRegex(regex, str) {
   return regex.test(str);
 }
