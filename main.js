@@ -8,7 +8,7 @@ function testRegex(regex, str) {
 }
 
 function validateNumber() {
-  const input = inputLm.value;
+  const input = inputLm.value.trim();
   const regex = /^(?:\+?1\s?)?(?:\(\d{3}\)|\d{3})[-\s.]?\d{3}[-\s.]?\d{4}$/;
 
   if (!input) {
